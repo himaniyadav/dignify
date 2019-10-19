@@ -1,6 +1,6 @@
 .container {
     display: grid;
-    grid-template-rows: 75px 600px 500px auto 500px;
+    grid-template-rows: 75px 600px 500px auto 350px;
     grid-template-columns: 300px auto;
     grid-template-areas:
       "header  header"
