@@ -1,6 +1,6 @@
 .container {
     display: grid;
-    grid-template-rows: 75px 600px 500px auto 300px;
+    grid-template-rows: 75px 600px 500px auto 500px;
     grid-template-columns: 300px auto;
     grid-template-areas:
       "header  header"
@@ -70,7 +70,7 @@
   
   p {
       font-family: "Montserrat"; 
-      font-size: 15px; 
+      font-size: 17px; 
       font-style: normal; 
       font-variant: normal; 
       font-weight: 400; 
@@ -78,7 +78,7 @@
   
   ul {
       font-family: "Montserrat"; 
-      font-size: 16px; 
+      font-size: 18px; 
       font-style: normal; 
       font-variant: normal; 
       font-weight: 400; 
@@ -101,7 +101,7 @@
       float: left;
       color: white;
       text-align: center;
-      padding: 14px 30px;
+      padding: 14px 40px;
       text-decoration: none;
       font-size: 17px;
       font-family: "Poppins"; 
@@ -325,32 +325,5 @@ a:hover {
       .main {
           padding-left: 50px;
           padding-right: 50px;
-      }
-  }
-
-  
-  table {
-      width: 100%;
-      color: hsl(240, 3%, 14%);
-      font-family: "Montserrat";
-      font-size: 16px;
-      font-weight: 400px;
-  }
-  table td:nth-child(1) {
-      width: 23%;
-      font-size:14px;
-      text-align: right;
-  }
-  td {
-      padding: 20px;
-      vertical-align: top;
-  }
-  @media (max-width: 600px) {
-      td {
-          padding: 20px;
-          padding-right: 5px;
-      }
-      table td:nth-child(1) {
-          font-size:13px;
       }
   }
