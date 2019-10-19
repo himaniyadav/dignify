@@ -171,6 +171,7 @@ a:hover {
 }
 .icon2 {
     width: 60px;
+    padding: 15px;
 }
 
   /* Style the footer */
@@ -313,7 +314,7 @@ a:hover {
       font-size: 22px;
   }
   .main .ico {
-    padding: 3px;
+    padding: 15px;
   }
   @media (max-width: 800px) {
       .main {
