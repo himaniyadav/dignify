@@ -10,54 +10,20 @@
       "footer  footer";
   }
   
-  @media (max-width: 900) and (min-width: 600px) {
-      .container {
-          display: grid;
-          grid-template-rows: auto;
-          grid-template-columns: 30% 70%;
-          grid-template-areas:
-              "header header"
-              "aside  intro"
-              "about  about"
-              "main   main"
-              "footer footer";
-      }
-  }
-  
-  @media only screen and (max-width: 600px) {
-      .container {
-          display: grid;
-          grid-template-rows: auto;
-          grid-template-columns: 100%;
-          grid-template-areas:
-              "header"
-              "intro"
-              "aside"
-              "about"
-              "main"
-              "footer";
-      }
-      nav a {
-          visibility: hidden;
-          display: none;
-          padding-top: 50px;
-      }
-  }
-  
-  .row {
-      display: flex;
-  }
+.row {
+    display: flex;
+} 
     
-  .column {
-      flex: 50%;
-  }
+.column {
+    flex: 50%;
+}
     
-  /* Makes columns stack on top of each other in mobile view */
-  @media screen and (max-width: 600px) {
-      .column {
-        flex: 100%;
-      }
-  }
+/* Makes columns stack on top of each other in mobile view */
+@media screen and (max-width: 600px) {
+    .column {
+       flex: 100%;
+    }
+}
     
   
   /* faking a css reset because I don't 
@@ -191,19 +157,22 @@
       text-decoration: none;
       font-size: 30px;
   }
-  a:hover {
-      opacity: 0.7;
-  }
-  .aside .social a {
-      padding: 4px;
-  }
-  .icon {
-      width: 40px;
-  }
-  .icon:hover {
-      opacity: 0.7;
-  }
-  
+a:hover {
+    opacity: 0.7;
+}
+.aside .social a {
+    padding: 4px;
+}
+.icon {
+    width: 40px;
+}
+.icon:hover {
+    opacity: 0.7;
+}
+.icon2 {
+    width: 60px;
+}
+
   /* Style the footer */
   .footer {
       background-color: #a7d86d;
@@ -282,7 +251,7 @@
       }
       .intro h2 {
           font-size: 18px;
-          font-style: italic;
+          font-style: bold;
       }
       .intro h3 {
           font-size: 15px;
@@ -343,6 +312,9 @@
       color: #52a551;
       font-size: 22px;
   }
+  .main .ico {
+    padding: 3px;
+  }
   @media (max-width: 800px) {
       .main {
           padding-left: 100px;
@@ -355,12 +327,7 @@
           padding-right: 50px;
       }
   }
-  
-  .main #activities ul {
-      font-size: 12px;
-      font-style: italic;
-      padding:0;
-  }
+
   
   table {
       width: 100%;
