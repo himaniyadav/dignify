@@ -1,7 +1,7 @@
 .container {
     display: grid;
     grid-template-rows: 75px 600px 500px auto 410px;
-    grid-template-columns: 300px auto;
+    grid-template-columns: 280px auto;
     grid-template-areas:
       "header  header"
       "aside   intro"
@@ -10,6 +10,26 @@
       "footer  footer";
   }
   
+@media only screen and (max-width: 600px) {
+    .container {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "header"
+            "intro"
+            "aside"
+            "about"
+            "main"
+            "footer";
+    }
+    nav a {
+        visibility: hidden;
+        display: none;
+        padding-top: 50px;
+    }
+}
+
 .row {
     display: flex;
 } 
@@ -24,7 +44,6 @@
        flex: 100%;
     }
 }
-    
   
   /* faking a css reset because I don't 
      actually know how to do that */
@@ -135,6 +154,7 @@
       .aside h2 {
           font-size: 0;
       }
+
   }
   .aside p { 
       font-size: 14px;
@@ -269,6 +289,7 @@ a:hover {
       padding-top: 30px;
       grid-area: about;
       vertical-align: middle;
+      font-size: 18px;
   }
   .about h2 {
       color: #52a551;
@@ -289,10 +310,12 @@ a:hover {
   }
   @media (max-width: 600px) {
       .about {
-          padding-left: 50px;
-          padding-right: 50px;
+          padding-left: 40px;
+          padding-right: 40px;
           padding-top: 30px;
-          padding-bottom: 30px;
+          padding-bottom: 0px;
+          font-size: 15px;
+
       }
   }
   
