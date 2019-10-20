@@ -55,12 +55,12 @@
   
   ::-moz-selection { /* Code for Firefox */
       color: rgb(80, 80, 80);
-      background: #acda56;
+      background: rgb(123, 245, 198);
   }
     
   ::selection {
       color: rgb(80, 80, 80); 
-      background: #acda56;
+      background: rgb(123, 245, 198);
   }
     
   /* Styling different headings and paragraph text */
@@ -193,11 +193,6 @@ a:hover {
     width: 60px;
     padding: 15px;
     margin-right: 15px
-}
-@media (max-width: 600px) {
-    .icon2 {
-        width: 45px;
-        margin-right: 10px
 }
 
   /* Style the footer */
@@ -356,6 +351,5 @@ a:hover {
       .main {
           padding-left: 50px;
           padding-right: 50px;
-    }
-}
-}
+      }
+  }
